@@ -1,10 +1,10 @@
 # Backend API for jsonplaceholder.typicode.com endpoints
 
 * [Requirements](#requirements)
-* [GraphQL playground](http://localhost:8080/graphiql?path=/graphql)
-* [Authentication](#authentication)
 * [Run](#run)
 * [Test](#test)
+* [Authentication](#authentication)
+* [GraphQL playground](#graphql-playground)
 * [Author](author)
 
 ## Requirements
@@ -18,15 +18,18 @@
     4. We are looking at your documentation, code quality, commits history, performance and
     optimization.
 
-## Authentication
-Basic authentication
-`user:letmein`
-
 ## Run
     mvn clean spring-boot:run
 
 ## Test
     mvn clean test
 
+## GraphQl playground
+[GraphQL playground](http://localhost:8080/graphiql?path=/graphql)
+
+## Authentication
+Basic authentication
+`user:letmein`
+
 ## Author
-[Julius Ramonas](mailto:julius@ramonas.xyz)
+[Julius Ramonas ✉️](mailto:julius@ramonas.xyz)
