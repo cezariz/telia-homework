@@ -1,0 +1,114 @@
+type Query {
+
+    #---------------------- USER QUERY ---------------------#
+    "Will fetch ALL users"
+    users: [User]
+
+    "Will fetch User by id"
+    userById(id: ID!): User
+    #-------------------------------------------------------#
+
+
+    #---------------------- POST QUERY ---------------------#
+    "Will fetch All posts"
+    posts: [Post]
+
+    "Will fetch specific users posts"
+    getPostsByUserId(userId: ID!): [Post]
+
+    "Will fetch a post by id"
+    getPostById(postId: ID!): Post
+
+    "Will fetch specific post comments"
+    getCommentsByPostId(postId: ID!): [Comment]
+    #-------------------------------------------------------#
+
+}
+
+
+type Mutation {
+
+    "Will fetch User by id"
+    createPost(post: PostInput): Post
+
+}
+
+
+#---------------------------------- USER TYPES ----------------------------------#
+"""
+A User that is using the platform
+to create posts, or write comments
+"""
+type User {
+    id: ID!
+    "The name of a user"
+    name: String
+    username: String!
+    email: String!
+    address: Address
+    phone: String
+    website: String
+    company: Company
+}
+
+
+"Address of a User"
+type Address {
+    street: String
+    "Suite/Appartment number"
+    suite: String
+    city: String
+    zipcode: String
+    "Geolocation data"
+    geo: Geo
+}
+
+
+"Geo is a Entity which holds geolocation data"
+type Geo {
+
+    "Latitude"
+   lat: String
+    "Longitude"
+   lng: String
+}
+
+
+"A Company"
+type Company {
+    name: String!
+    catchPhrase: String
+    "A generated corporate bs, probably using https://www.atrixnet.com/bs-generator.html or alike"
+    bs: String
+}
+#--------------------------------------------------------------------------------#
+
+
+#---------------------------------- POST TYPES ----------------------------------#
+"A Post input"
+input PostInput {
+    userId: ID!
+    title: String
+    body: String
+}
+
+
+"A Post"
+type Post {
+    userId: ID!
+    id: ID!
+    title: String
+    body: String
+}
+
+
+"A Comment"
+type Comment {
+    postId: ID!
+    id: ID!
+    name: String
+    email: String!
+    body: String!
+}
+#--------------------------------------------------------------------------------#
+

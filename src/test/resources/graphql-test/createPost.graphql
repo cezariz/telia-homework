@@ -1,0 +1,8 @@
+mutation {
+  createPost(post: {userId: 1, title: "A nice title", body: "Nice body"}) {
+    userId
+    id
+    title
+    body
+  }
+}

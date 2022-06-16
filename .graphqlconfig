@@ -1,0 +1,5 @@
+{
+  "name": "jsonplaceholder.typicode.com schema",
+  "schemaPath": "src/main/resources/graphql/schema.graphqls",
+  "extensions": {}
+}
