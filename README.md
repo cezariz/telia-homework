@@ -1,6 +1,7 @@
 # Backend API for jsonplaceholder.typicode.com endpoints
 
 * [Requirements](#requirements)
+* [About project](#about-project)
 * [Run](#run)
 * [Test](#test)
 * [Authentication](#authentication)
@@ -18,6 +19,16 @@
     4. We are looking at your documentation, code quality, commits history, performance and
     optimization.
 
+## About project
+- [Package by Feature](https://www.techyourchance.com/popular-package-structures#package-by-feature) project structure
+- GraphQl endpoints for querying Users and Posts  recources from [jsonplaceholderApi](https://jsonplaceholder.typicode.com/).
+- [GraphQl playground](#graphql-playground).
+- [EditorConfig](https://EditorConfig.org) for coding style formating
+- Minimal documentation for UserService and PostService
+- Basic [authentication](#authentication)
+- Sample integration tests for Post endpoint. To run tests see [Test](#test)
+- Used [WebFlux](https://docs.spring.io/spring-framework/docs/current/reference/html/web-reactive.html) and [WebClient](https://docs.spring.io/spring-framework/docs/current/reference/html/web-reactive.html#webflux-client)
+
 ## Run
     mvn clean spring-boot:run
 
@@ -25,7 +36,7 @@
     mvn clean test
 
 ## GraphQl playground
-[GraphQL playground](http://localhost:8080/graphiql?path=/graphql)
+After running the project you can access the [GraphQL playground](http://localhost:8080/graphiql?path=/graphql).
 
 ## Authentication
 Basic authentication

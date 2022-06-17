@@ -1,6 +1,9 @@
 package com.example.backend.post;
 
+import java.time.Duration;
 import java.util.Map;
+
+import javax.annotation.PostConstruct;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -12,7 +15,7 @@ import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
 
 /**
- * Service layer for Post
+ * Service layer for {@link Post}
  *
  * @author JuliusR
  */
@@ -29,6 +32,8 @@ public class PostService {
 
     private final WebClient jsonplaceholderApiClient;
 
+    private Flux<Post> cachedPosts;
+
     /**
      * Class contructor
      */
@@ -37,12 +42,26 @@ public class PostService {
         this.jsonplaceholderApiClient = jsonplaceholderApiClient;
     }
 
+    @PostConstruct
+    public void init() {
+        cachedPosts = getAllPosts().cache(100, Duration.ofSeconds(3));
+    }
+
     /**
-     * Returns all posts
+     * Returns all cached posts fetched from jsonplaceholderApi
      *
      * @return Flux of type {@link Post}
      */
-    public Flux<Post> getAllPosts() {
+    public Flux<Post> getCachedPosts() {
+        return cachedPosts;
+    }
+
+    /**
+     * Fetches all posts
+     *
+     * @return Flux of type {@link Post}
+     */
+    private Flux<Post> getAllPosts() {
         LOG.debug("Fetching all Posts.");
 
         return jsonplaceholderApiClient
@@ -53,7 +72,7 @@ public class PostService {
     }
 
     /**
-     * Returns all posts of a user by user id
+     * Fetches all posts of a user by user id
      *
      * @return Flux of type {@link Post}
      */
@@ -72,7 +91,7 @@ public class PostService {
     }
 
     /**
-     * Returns Post by id
+     * Fetches Post by id
      *
      * @return Mono of type {@link Post}
      */
@@ -94,7 +113,7 @@ public class PostService {
     }
 
     /**
-     * Returns comments of a post by id
+     * Fetches comments of a post by id
      *
      * @return Mono of saved {@link Post}
      */

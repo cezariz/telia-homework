@@ -23,7 +23,7 @@ public class PostGraphqlController {
 
     @QueryMapping
     Flux<Post> posts() {
-        return postService.getAllPosts();
+        return postService.getCachedPosts();
     }
 
     @QueryMapping
