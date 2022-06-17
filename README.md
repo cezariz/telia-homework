@@ -1,7 +1,8 @@
-# Backend API for jsonplaceholder.typicode.com endpoints
+# Tealia homework Backend API for jsonplaceholder.typicode.com endpoints
 
 * [Requirements](#requirements)
 * [About project](#about-project)
+* [Prerequisites](#prerequisites)
 * [Run](#run)
 * [Test](#test)
 * [Authentication](#authentication)
@@ -24,10 +25,15 @@
 - GraphQl endpoints for querying Users and Posts  recources from [jsonplaceholderApi](https://jsonplaceholder.typicode.com/).
 - [GraphQl playground](#graphql-playground).
 - [EditorConfig](https://EditorConfig.org) for coding style formating
-- Minimal documentation for UserService and PostService
+- Minimal documentation for UserService and PostService, and schema.graphqls
 - Basic [authentication](#authentication)
 - Sample integration tests for Post endpoint. To run tests see [Test](#test)
+- Logs for debugging
 - Used [WebFlux](https://docs.spring.io/spring-framework/docs/current/reference/html/web-reactive.html) and [WebClient](https://docs.spring.io/spring-framework/docs/current/reference/html/web-reactive.html#webflux-client)
+
+## Prerequisites
+* Java 17
+* Maven 3
 
 ## Run
     mvn clean spring-boot:run
