@@ -56,8 +56,7 @@ Basic authentication
 `user:letmein`
 
 ## Author
-Julius Ramonas
-[Email ✉️](mailto:julius@ramonas.xyz)
+Julius Ramonas [✉️](mailto:julius@ramonas.xyz)
 <div id="badges">
   <a href="https://www.linkedin.com/in/julius-ramonas-b172ab9a/">
     <img src="https://img.shields.io/badge/LinkedIn-blue?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn Badge"/>
