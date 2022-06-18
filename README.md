@@ -26,7 +26,7 @@
 - [GraphQl playground](#graphql-playground).
 - [EditorConfig](https://EditorConfig.org) for coding style formating
 - Minimal documentation for UserService and PostService, and schema.graphqls
-- Basic [authentication](#authentication)
+- Spring security with Basic [authentication](#authentication)
 - Sample integration tests for Post endpoint. To run tests see [Test](#test)
 - Logs for debugging
 - Used [WebFlux](https://docs.spring.io/spring-framework/docs/current/reference/html/web-reactive.html) and [WebClient](https://docs.spring.io/spring-framework/docs/current/reference/html/web-reactive.html#webflux-client)
