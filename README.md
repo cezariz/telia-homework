@@ -1,13 +1,14 @@
-# Tealia homework Backend API for jsonplaceholder.typicode.com endpoints
+# Telia homework API
+For querying jsonplaceholder.typicode.com resources.
 
-## Reference Documentation
+## Table of Contents
 * [Requirements](#requirements)
-* [About project](#about-project)
+* [About the Project](#about-the-project)
 * [Prerequisites](#prerequisites)
 * [Run](#run)
 * [Test](#test)
 * [Authentication](#authentication)
-* [GraphQL playground](#graphql-playground)
+* [GraphQL Playground](#graphql-playground)
 * [Author](author)
 
 ## Requirements
@@ -21,7 +22,7 @@
     4. We are looking at your documentation, code quality, commits history, performance and
     optimization.
 
-## About project
+## About the Project
 - [Package by Feature](https://www.techyourchance.com/popular-package-structures#package-by-feature) project structure
 - GraphQl endpoints for querying Users and Posts  recources from [jsonplaceholderApi](https://jsonplaceholder.typicode.com/).
 - [GraphQl playground](#graphql-playground).
@@ -31,18 +32,23 @@
 - Sample integration tests for Post endpoint. To run tests see [Test](#test)
 - Logs for debugging
 - Used [WebFlux](https://docs.spring.io/spring-framework/docs/current/reference/html/web-reactive.html) and [WebClient](https://docs.spring.io/spring-framework/docs/current/reference/html/web-reactive.html#webflux-client)
+- [![commits](https://badgen.net/github/commits/cezariz/telia-homework/main)](https://badgen.net/github/commits/cezariz/telia-homework/main?icon=github&color=green)
 
 ## Prerequisites
 * Java 17
 * Maven 3
 
 ## Run
-    mvn clean spring-boot:run
+```shell
+mvn clean spring-boot:run
+```
 
 ## Test
-    mvn clean test
+```shell
+mvn clean test
+```
 
-## GraphQl playground
+## GraphQl Playground
 After running the project you can access the [GraphQL playground](http://localhost:8080/graphiql?path=/graphql).
 
 ## Authentication
@@ -50,4 +56,10 @@ Basic authentication
 `user:letmein`
 
 ## Author
-[Julius Ramonas ✉️](mailto:julius@ramonas.xyz)
+Julius Ramonas
+[Email ✉️](mailto:julius@ramonas.xyz)
+<div id="badges">
+  <a href="https://www.linkedin.com/in/julius-ramonas-b172ab9a/">
+    <img src="https://img.shields.io/badge/LinkedIn-blue?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn Badge"/>
+  </a>
+</div>
