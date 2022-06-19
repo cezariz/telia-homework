@@ -1,6 +1,7 @@
 # Telia homework API
-API for querying [jsonplaceholder.typicode.com](https://jsonplaceholder.typicode.com) resources.
 [![commits](https://badgen.net/github/commits/cezariz/telia-homework/main)](https://badgen.net/github/commits/cezariz/telia-homework/main?icon=github&color=green)
+<br />
+API for querying [jsonplaceholder.typicode.com](https://jsonplaceholder.typicode.com) resources.
 
 ## Table of Contents
 * [Requirements](#requirements)
