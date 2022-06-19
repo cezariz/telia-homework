@@ -1,5 +1,6 @@
 # Telia homework API
-For querying jsonplaceholder.typicode.com resources.
+API for querying [jsonplaceholder.typicode.com](https://jsonplaceholder.typicode.com) resources.
+[![commits](https://badgen.net/github/commits/cezariz/telia-homework/main)](https://badgen.net/github/commits/cezariz/telia-homework/main?icon=github&color=green)
 
 ## Table of Contents
 * [Requirements](#requirements)
@@ -32,7 +33,6 @@ For querying jsonplaceholder.typicode.com resources.
 - Sample integration tests for Post endpoint. To run tests see [Test](#test)
 - Logs for debugging
 - Used [WebFlux](https://docs.spring.io/spring-framework/docs/current/reference/html/web-reactive.html) and [WebClient](https://docs.spring.io/spring-framework/docs/current/reference/html/web-reactive.html#webflux-client)
-- [![commits](https://badgen.net/github/commits/cezariz/telia-homework/main)](https://badgen.net/github/commits/cezariz/telia-homework/main?icon=github&color=green)
 
 ## Prerequisites
 * Java 17
