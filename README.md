@@ -1,5 +1,5 @@
 # Telia homework API
-[![commits](https://badgen.net/github/commits/cezariz/telia-homework/main)](https://badgen.net/github/commits/cezariz/telia-homework/main?icon=github&color=green)
+[![commits](https://badgen.net/github/commits/cezariz/telia-homework/main)](https://github.com/cezariz/telia-homework/commits/main)
 <br />
 API for querying [jsonplaceholder.typicode.com](https://jsonplaceholder.typicode.com) resources.
 
